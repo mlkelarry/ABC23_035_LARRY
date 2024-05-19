@@ -1,15 +1,14 @@
-{
-  "name": "warner-bros-website",
-  "version": "1.0.0",
-  "description": "A website for Warner Bros with an AI chatbot",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "author": "Warner Bros",
-  "license": "MIT",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1"
-  }
-}
+# Warner Bros Website
+
+## Overview
+This project is a website for Warner Bros, designed with a Netflix-style interface and an integrated AI chatbot. The website includes a sidebar for navigation, a hero section, a content grid for displaying news and popular items, and a search bar. The AI chatbot can handle basic user interactions and provide responses.
+
+## Features
+- Responsive design for various devices
+- Sidebar navigation
+- Hero section with a featured item
+- Content grid with cards
+- Search bar
+- AI chatbot for user interaction
+
+## File Structure
