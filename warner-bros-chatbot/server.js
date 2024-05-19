@@ -1,5 +1,5 @@
 // Example backend server code for handling AI chatbot interactions
-
+**.gitignore** (Git ignore file):
 const express = require('express');
 const bodyParser = require('body-parser');
 const { ChatbotService } = require('./chatbotService');
