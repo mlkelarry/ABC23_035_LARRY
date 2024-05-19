@@ -1,4 +1,13 @@
-# Specifies intentionally untracked files to ignore
-
 # Node.js dependencies
 node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
