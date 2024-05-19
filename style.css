@@ -1,52 +1,132 @@
-/* Reset styles */
-body, h1, h2, h3, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Global styles */
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+footer {
+    background-color: #333;
     color: #fff;
-    text-decoration: none;
+    padding: 20px;
+    text-align: center;
 }
 
 main {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 20px;
+/* Homepage Styles */
+.banner {
+    /* Styles for rotating banners */
 }
 
-.hero {
-    background-image: url('hero-background.jpg');
-    background-size: cover;
-    color: #fff;
-    padding: 100px;
-    text-align: center;
+.featured-content {
+    /* Styles for featured content recommendations */
 }
 
-.interactive {
-    background-color: #fff;
-    padding: 20px;
+/* Movie Page Styles */
+.movie-details {
+    /* Styles for movie details section */
+}
+
+.synopsis {
+    /* Styles for movie synopsis */
+}
+
+.cast-and-crew {
+    /* Styles for cast and crew information */
+}
+
+.trailers {
+    /* Styles for trailers section */
+}
+
+.release-dates {
+    /* Styles for release dates section */
+}
+
+/* TV Shows Page Styles */
+.tv-show-details {
+    /* Styles for TV show details section */
+}
+
+.episode-guide {
+    /* Styles for episode guide */
+}
+
+.streaming-availability {
+    /* Styles for streaming availability */
+}
+
+.character-profiles {
+    /* Styles for character profiles */
+}
+
+/* Games & Apps Page Styles */
+.games-section {
+    /* Styles for games section */
+}
+
+.game-preview {
+    /* Styles for game preview */
+}
+
+.purchase-options {
+    /* Styles for purchase options */
+}
+
+.behind-the-scenes {
+    /* Styles for behind-the-scenes section */
+}
+
+/* News & Behind-the-Scenes Page Styles */
+.news-section {
+    /* Styles for news section */
+}
+
+.industry-news {
+    /* Styles for industry news */
+}
+
+.interviews {
+    /* Styles for interviews */
+}
+
+.filmmaking-insights {
+    /* Styles for filmmaking insights */
+}
+
+.game-development {
+    /* Styles for game development */
+}
+
+/* Merchandise Page Styles */
+.merchandise-section {
+    /* Styles for merchandise section */
+}
+
+.apparel {
+    /* Styles for apparel */
+}
+
+.collectibles {
+    /* Styles for collectibles */
+}
+
+.accessories {
+    /* Styles for accessories */
+}
+
+/* AI Chatbot Styles */
+.chatbot {
+    /* Styles for chatbot interface */
 }
