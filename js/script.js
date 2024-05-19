@@ -39,15 +39,24 @@ function updateHeroImage() {
     currentIndex = (currentIndex + 1) % carouselImages.length;
 } 
 // Global variables and functions
+let rotatingBannerIndex = 0; // Index for rotating banners
+const rotatingBanners = ['banner1.jpg', 'banner2.jpg', 'banner3.jpg']; // Placeholder image names
 
 // Function to initialize the website
 function initializeWebsite() {
     // Code to initialize website components
 }
 
+// Function to handle rotating banners on the homepage
+function rotateBanners() {
+    const banner = document.querySelector('.banner');
+    banner.style.backgroundImage = `url('images/${rotatingBanners[rotatingBannerIndex]}')`;
+    rotatingBannerIndex = (rotatingBannerIndex + 1) % rotatingBanners.length;
+}
+
 // Function to handle user interactions on the homepage
 function handleHomepageInteractions() {
-    // Code to handle rotating banners and featured content recommendations
+    setInterval(rotateBanners, 5000); // Rotate banners every 5 seconds
 }
 
 // Function to handle movie page interactions
@@ -89,8 +98,3 @@ document.addEventListener('DOMContentLoaded', handleGamesPageInteractions);
 document.addEventListener('DOMContentLoaded', handleNewsPageInteractions);
 document.addEventListener('DOMContentLoaded', handleMerchandisePageInteractions);
 document.addEventListener('DOMContentLoaded', handleChatbotInteractions);
-+
-
-setInterval(updateHeroImage, 5000);
-updateHeroImage();
-
