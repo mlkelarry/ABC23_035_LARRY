@@ -3,81 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warner Bros</title>
+    <title>Warner Bros Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="warner-bros-logo.png" alt="Warner Bros Logo">
-        </div>
+    <div class="sidebar">
+        <div class="logo">Warner Bros</div>
         <nav>
             <ul>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">TV Shows</a></li>
-                <li><a href="#">Games & Apps</a></li>
-                <li><a href="#">News & Behind-the-Scenes</a></li>
-                <li><a href="#">Merchandise</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#popular">Popular</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#wishlist">Wishlist</a></li>
+                <li><a href="#history">History</a></li>
             </ul>
         </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>News</h1>
+            <input type="text" placeholder="Search">
+        </header>
         <section class="hero">
-            <!-- Rotating banners and featured content recommendations -->
-            <div class="banner">
-                <!-- Add rotating banners here -->
-                <img src="movie-poster1.jpg" alt="Movie Poster 1">
-                <img src="tv-show-still1.jpg" alt="TV Show Still 1">
-                <img src="game-artwork1.jpg" alt="Game Artwork 1">
-            </div>
-            <!-- Featured content recommendations cater to different user segments -->
-            <div class="featured-content">
-                <h2>Featured Content</h2>
-                <div class="recommendations">
-                    <!-- Add featured content recommendations here -->
-                    <div class="recommendation">
-                        <img src="movie-poster2.jpg" alt="Movie Poster 2">
-                        <p>For Movie Enthusiasts: Check out this exciting new movie!</p>
-                    </div>
-                    <div class="recommendation">
-                        <img src="game-artwork2.jpg" alt="Game Artwork 2">
-                        <p>For Gamers: Dive into this thrilling new game!</p>
-                    </div>
-                    <div class="recommendation">
-                        <img src="tv-show-still2.jpg" alt="TV Show Still 2">
-                        <p>For TV Show Fans: Don't miss the latest episode of your favorite series!</p>
-                    </div>
-                </div>
+            <div class="hero-content">
+                <h2>Better Call Saul</h2>
+                <p>Hero</p>
+                <a href="#" class="btn">See All Episodes</a>
             </div>
         </section>
-
-        <!-- Other sections can be added here based on the storyboard flowchart -->
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Warner Bros. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        <section class="content-grid">
+            <!-- Example of content cards -->
+            <div class="card">
+                <img src="images/house-of-cards.jpg" alt="House of Cards Trailer">
+                <h3>New House of Cards Trailer</h3>
             </div>
-        </div>
-    </footer>
-
-    <!-- AI Chatbot -->
-    <div class="chatbot">
-        <div class="chatbot-toggle">Chat</div>
-        <div class="chatbot-window">
-            <!-- Chatbot messages go here -->
-        </div>
+            <div class="card">
+                <img src="images/brooklyn-nine-nine.jpg" alt="Brooklyn Nine-Nine">
+                <h3>Brooklyn Nine-Nine Season 7</h3>
+            </div>
+            <!-- Additional cards here -->
+        </section>
     </div>
-
     <script src="script.js"></script>
+    <script src="chatbot.js"></script>
 </body>
 </html>
