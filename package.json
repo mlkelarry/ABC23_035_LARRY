@@ -1,13 +1,15 @@
 {
   "name": "warner-bros-website",
   "version": "1.0.0",
-  "description": "A website for Warner Bros with AI chatbot functionality",
+  "description": "A website for Warner Bros with an AI chatbot",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
+  "author": "Warner Bros",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",
-    "body-parser": "^1.19.0"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
   }
 }
