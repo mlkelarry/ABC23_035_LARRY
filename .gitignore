@@ -1,1 +1,4 @@
+# Specifies intentionally untracked files to ignore
 
+# Node.js dependencies
+node_modules/
