@@ -1,45 +1,30 @@
-// server.js
+// Example backend server code for handling AI chatbot interactions
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const dialogflow = require('dialogflow');
+const { ChatbotService } = require('./chatbotService');
 
 const app = express();
 const port = 3000;
 
-// Dialogflow configuration
-const projectId = 'your-project-id';
-const sessionId = 'your-session-id';
-const languageCode = 'en-US';
-const sessionClient = new dialogflow.SessionsClient();
-const sessionPath = sessionClient.sessionPath(projectId, sessionId);
-
 app.use(bodyParser.json());
 
-// Handle incoming messages
-app.post('/message', async (req, res) => {
-  const { message } = req.body;
+// Initialize the chatbot service
+const chatbotService = new ChatbotService();
 
-  const request = {
-    session: sessionPath,
-    queryInput: {
-      text: {
-        text: message,
-        languageCode: languageCode,
-      },
-    },
-  };
+// Handle incoming messages from the frontend
+app.post('/message', (req, res) => {
+    const message = req.body.message;
 
-  try {
-    const responses = await sessionClient.detectIntent(request);
-    const result = responses[0].queryResult;
-    res.json({ message: result.fulfillmentText });
-  } catch (err) {
-    console.error('Error processing message:', err);
-    res.status(500).json({ message: 'Internal server error' });
-  }
+    // Process the message using the chatbot service
+    const response = chatbotService.processMessage(message);
+
+    // Send the response back to the frontend
+    res.json({ response });
 });
 
+// Start the server
 app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+    console.log(`Server is listening on port ${port}`);
 });
+
