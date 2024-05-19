@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
     margin: 0;
     padding: 0;
 }
@@ -26,107 +26,151 @@ main {
 
 /* Homepage Styles */
 .banner {
-    /* Styles for rotating banners */
+    height: 400px;
+    background-image: url('images/banner-default.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .featured-content {
-    /* Styles for featured content recommendations */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.featured-content-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.featured-content-item:hover {
+    transform: translateY(-5px);
 }
 
 /* Movie Page Styles */
 .movie-details {
-    /* Styles for movie details section */
+    margin-top: 20px;
 }
 
 .synopsis {
-    /* Styles for movie synopsis */
+    margin-bottom: 20px;
+    font-size: 16px;
 }
 
-.cast-and-crew {
-    /* Styles for cast and crew information */
+.cast-and-crew ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cast-and-crew li {
+    margin-bottom: 10px;
 }
 
 .trailers {
-    /* Styles for trailers section */
+    margin-top: 20px;
+}
+
+.trailers iframe {
+    width: 100%;
+    height: 400px;
 }
 
 .release-dates {
-    /* Styles for release dates section */
+    margin-top: 20px;
 }
 
 /* TV Shows Page Styles */
 .tv-show-details {
-    /* Styles for TV show details section */
+    margin-top: 20px;
 }
 
-.episode-guide {
-    /* Styles for episode guide */
+.episode-guide ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.episode-guide li {
+    margin-bottom: 10px;
 }
 
 .streaming-availability {
-    /* Styles for streaming availability */
+    margin-top: 20px;
 }
 
-.character-profiles {
-    /* Styles for character profiles */
+.character-profiles ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.character-profiles li {
+    margin-bottom: 10px;
 }
 
 /* Games & Apps Page Styles */
 .games-section {
-    /* Styles for games section */
+    margin-top: 20px;
 }
 
 .game-preview {
-    /* Styles for game preview */
+    margin-bottom: 20px;
 }
 
 .purchase-options {
-    /* Styles for purchase options */
+    margin-bottom: 20px;
 }
 
 .behind-the-scenes {
-    /* Styles for behind-the-scenes section */
+    margin-top: 20px;
 }
 
 /* News & Behind-the-Scenes Page Styles */
 .news-section {
-    /* Styles for news section */
-}
-
-.industry-news {
-    /* Styles for industry news */
+    margin-top: 20px;
 }
 
 .interviews {
-    /* Styles for interviews */
+    margin-bottom: 20px;
 }
 
 .filmmaking-insights {
-    /* Styles for filmmaking insights */
+    margin-bottom: 20px;
 }
 
 .game-development {
-    /* Styles for game development */
+    margin-bottom: 20px;
 }
 
 /* Merchandise Page Styles */
 .merchandise-section {
-    /* Styles for merchandise section */
+    margin-top: 20px;
 }
 
 .apparel {
-    /* Styles for apparel */
+    margin-bottom: 20px;
 }
 
 .collectibles {
-    /* Styles for collectibles */
+    margin-bottom: 20px;
 }
 
 .accessories {
-    /* Styles for accessories */
+    margin-bottom: 20px;
 }
 
 /* AI Chatbot Styles */
 .chatbot {
-    /* Styles for chatbot interface */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
