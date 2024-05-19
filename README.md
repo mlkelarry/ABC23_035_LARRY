@@ -1,10 +1,10 @@
 # ABC23_035_LARRY
 # Warner Bros Website Redesign
 
-Welcome to the Warner Bros Website Redesign project! This project aims to revamp the existing Warner Bros website to provide a seamless and engaging experience for users. The redesigned website will showcase movies, TV shows, games, news, behind-the-scenes content, and merchandise related to Warner Bros' entertainment properties.
+Welcome to the Warner Bros Website Redesign project! This project aims to revamp the existing Warner Bros website to provide a seamless and engaging experience for users. The redesigned website will showcase movies, TV shows, games, news, behind-the-scenes content, and merchandise related to Warner Bros' entertainment properties.This is a website project for Warner Bros, featuring an AI chatbot for interactive user engagement.
 
 ## Features
-
+-**AI Chatbot**: Engage with users and provide assistance using natural language processing.
 - **Homepage**: Rotating banners featuring movie posters, TV show stills, and game artwork.
 - **Featured Content**: Recommendations catered to different user segments (movie enthusiasts, gamers, TV show fans).
 - **Movie Details Page**: Detailed information about Warner Bros films including trailers, synopses, cast details, and release schedules.
