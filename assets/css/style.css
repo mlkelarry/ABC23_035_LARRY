@@ -1,162 +1,36 @@
-/* General Styles */
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Sidebar Styles */
-.sidebar {
-    width: 250px;
-    background-color: #141414;
-    position: fixed;
-    height: 100%;
-    padding: 20px;
-    color: #fff;
-}
-
-.sidebar .logo {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-.sidebar nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar nav ul li {
-    margin-bottom: 10px;
-}
-
-.sidebar nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    transition: background-color 0.3s;
-}
-
-.sidebar nav ul li a:hover {
-    background-color: #333;
-}
-
-/* Main Content Styles */
-.main-content {
-    margin-left: 270px;
-    padding: 20px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-header h1 {
-    margin: 0;
-}
-
-header input[type="text"] {
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Hero Section */
-.hero {
-    background: url('images/hero-image.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 40px 20px;
-    color: #fff;
-}
-
-.hero-content {
-    max-width: 600px;
-}
-
-.hero-content h2 {
-    font-size: 2.5em;
-    margin: 0 0 10px 0;
-}
-
-.hero-content p {
-    font-size: 1.2em;
-}
-
-.hero-content .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.hero-content .btn:hover {
-    background-color: #0056b3;
-}
-
-/* Content Grid */
-.content-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-.card h3 {
-    margin: 10px;
-    font-size: 1.2em;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-/* Footer Styles */
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-}
-
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .main-content {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
         margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-content .content {
+        margin: 10px 0;
     }
 
     .sidebar {
         width: 100%;
         position: relative;
+    }
+}
+
+@media (max-width: 576px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9em;
     }
 }
