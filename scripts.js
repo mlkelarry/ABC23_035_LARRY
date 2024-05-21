@@ -14,61 +14,74 @@ function toggleClassOnClick(elementId, className) {
 // Add 'active' class to the navigation link when clicked
 toggleClassOnClick('nav-link', 'active');
 
-// Function to display a modal with movie details
-function displayMovieModal(movieId) {
-    var modal = document.getElementById('movie-modal');
-    var movieDetails = getMovieDetails(movieId); // Fetch movie details from an API or database
+// Function to display a modal with movie or game details
+function displayDetailsModal(itemType, itemId) {
+    var modal = document.getElementById('details-modal');
+    var itemDetails = getItemDetails(itemType, itemId); // Fetch item details from an API or database
 
-    // Update modal content with movie details
-    if (modal && movieDetails) {
+    // Update modal content with item details
+    if (modal && itemDetails) {
         var titleElement = modal.querySelector('.modal-title');
         var bodyElement = modal.querySelector('.modal-body');
 
-        titleElement.textContent = movieDetails.title;
-        bodyElement.innerHTML = '<p><strong>Director:</strong> ' + movieDetails.director + '</p>' +
-                                '<p><strong>Release Date:</strong> ' + movieDetails.releaseDate + '</p>' +
-                                '<p><strong>Description:</strong> ' + movieDetails.description + '</p>';
+        titleElement.textContent = itemDetails.title;
+        bodyElement.innerHTML = '<p><strong>Category:</strong> ' + itemDetails.category + '</p>' +
+                                '<p><strong>Description:</strong> ' + itemDetails.description + '</p>';
 
         // Display the modal
         $(modal).modal('show');
     }
 }
 
-// Example usage of displayMovieModal function
-// Open movie modal when a movie card is clicked
-var movieCards = document.querySelectorAll('.movie-card');
-if (movieCards) {
-    movieCards.forEach(function(card) {
+// Example usage of displayDetailsModal function
+// Open modal when a movie or game card is clicked
+var itemCards = document.querySelectorAll('.movie-card, .game-card');
+if (itemCards) {
+    itemCards.forEach(function(card) {
         card.addEventListener('click', function() {
-            var movieId = card.dataset.movieId;
-            displayMovieModal(movieId);
+            var itemType = card.classList.contains('movie-card') ? 'movie' : 'game';
+            var itemId = card.dataset.itemId;
+            displayDetailsModal(itemType, itemId);
         });
     });
 }
 
-// Function to fetch movie details from an API or database
-function getMovieDetails(movieId) {
-    // This is just a placeholder function, in a real application you would fetch movie details from a server
-    // For example, you could use AJAX or fetch API to make a request to your server and retrieve movie details based on the movieId
+// Function to fetch item details from an API or database
+function getItemDetails(itemType, itemId) {
+    // This is just a placeholder function, in a real application you would fetch item details from a server
+    // For example, you could use AJAX or fetch API to make a request to your server and retrieve item details based on the itemType and itemId
     // For simplicity, we'll just return some mock data here
 
-    // Mock movie details
-    var mockMovieData = {
-        1: {
-            title: 'The Dark Knight',
-            director: 'Christopher Nolan',
-            releaseDate: 'July 18, 2008',
-            description: 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.'
-        },
-        2: {
-            title: 'Inception',
-            director: 'Christopher Nolan',
-            releaseDate: 'July 16, 2010',
-            description: 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.'
-        },
-        // Add more movie details as needed
-    };
+    if (itemType === 'movie') {
+        // Mock movie details
+        var mockMovieData = {
+            1: {
+                title: 'The Dark Knight',
+                category: 'Movie',
+                description: 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.'
+            },
+            2: {
+                title: 'Inception',
+                category: 'Movie',
+                description: 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.'
+            },
+            // Add more movie details as needed
+        };
 
-    // Return movie details based on movieId
-    return mockMovieData[movieId];
+        // Return movie details based on itemId
+        return mockMovieData[itemId];
+    } else if (itemType === 'game') {
+        // Mock game details
+        var mockGameData = {
+            1: {
+                title: 'Game 1',
+                category: 'Game',
+                description: 'Description of Game 1.'
+            },
+            // Add more game details as needed
+        };
+
+        // Return game details based on itemId
+        return mockGameData[itemId];
+    }
 }
