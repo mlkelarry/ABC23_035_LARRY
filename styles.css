@@ -1,0 +1,23 @@
+/* Custom Styles for Warner Bros Website */
+
+/* Body Styles */
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* Navigation Bar Styles */
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* White link color */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffd700; /* Gold link color on hover */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px 0; /* Padding top and bottom */
+}
