@@ -3,56 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warner Bros Home</title>
+    <title>Warner Bros</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Warner Bros</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="movies.html">Movies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tvshows.html">TV Shows</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="games.html">Games & Apps</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="collections.html">Collections</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="feedback.html">Feedback</a>
-                        </li>
-                    </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Warner Bros Logo">
+            Warner Bros
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tvshows.html">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="games.html">Games & Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="collections.html">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="jumbotron text-center text-white">
+            <h1 class="display-4">Welcome to Warner Bros</h1>
+            <p class="lead">Your central hub for all things Warner Bros</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="images/movie1.jpg" class="card-img" alt="Movie">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Latest Movies</h5>
+                        <p class="card-text">Explore our latest movie releases.</p>
+                        <a href="movies.html" class="btn btn-primary">View Movies</a>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-
-    <main role="main">
-        <!-- Main content for home page -->
-        <section class="container mt-4">
-            <h1>Welcome to Warner Bros</h1>
-            <p>This is the central hub for Warner Bros entertainment content.</p>
-            <!-- Add more content as needed -->
-        </section>
-    </main>
-
-    <!-- Bootstrap and custom scripts -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="images/tvshow1.jpg" class="card-img" alt="TV Show">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Popular TV Shows</h5>
+                        <p class="card-text">Catch up on popular TV shows.</p>
+                        <a href="tvshows.html" class="btn btn-primary">View TV Shows</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="images/game1.jpg" class="card-img" alt="Game">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Games & Apps</h5>
+                        <p class="card-text">Discover our latest games and apps.</p>
+                        <a href="games.html" class="btn btn-primary">View Games & Apps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
 </body>
 </html>
+
