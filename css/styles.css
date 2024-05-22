@@ -3,42 +3,32 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black; /* Set background color to black */
     background-image: url('your-wallpaper-image.jpg');
     animation: slide 20s infinite linear;
 }
+
 @keyframes slide {
     0% { background-position: 0 0; }
     100% { background-position: 100% 0; }
 }
-/* Navigation styles */
-nav {
-    background-color: black; /* Set navigation background color to blue */
-}
 
-nav a.navbar-brand, nav a.nav-link {
-    color: white; /* Set navigation text color to white*/
-}
-
-}
 header, footer {
-    background-color: #333;
-    color: gold;
+    background-color: #333333; /* Dark gray background */
+    color: #ffffff; /* White color */
     padding: 10px 0;
     text-align: center;
 }
 
 nav a.navbar-brand, nav a.nav-link {
-    color: white;
+    color: #ffffff; /* White color */
 }
 
 main {
     padding: 20px;
-    padding-top: 100px; /* Adjust top padding to avoid overlapping with fixed navigation */
 }
 
 h1, h2, h3 {
-    color: #333;
+    color: #ffffff; /* White color */
 }
 
 figure {
@@ -55,13 +45,11 @@ figure img {
 figure figcaption {
     margin-top: 10px;
     font-style: italic;
-    color: #666;
+    color: #cccccc; /* Light gray color */
 }
 
 footer {
     margin-top: 20px;
-    background-color: black; /* Set footer background color to black */
-    color: white; /* Set footer text color to white */
 }
 
 /* Responsive Design */
