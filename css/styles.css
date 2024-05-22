@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a.navbar-brand, nav a.nav-link {
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, footer {
+        text-align: center;
+    }
+
+    nav ul.navbar-nav {
+        text-align: center;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
